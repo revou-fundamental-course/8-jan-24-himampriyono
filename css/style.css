@@ -215,3 +215,34 @@ body{
 	color: white;
 	padding: 4px 24px;
 }
+
+@media only screen and (max-width: 768px){
+	.judul{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.judul h2{
+		margin: auto;
+	}
+
+	.info_bangun_datar{
+		flex-direction: column;
+	}
+
+	.persegi_container, .rumus_luas, .rumus_keliling{
+		width: 90%;
+		margin: auto;
+	}
+
+	.input_container{
+		flex-direction: column;
+		justify-content: space-around;
+		gap: 12px;
+	}
+
+	.penyelesaian_persegi{
+		flex-direction: column;
+	}
+}
