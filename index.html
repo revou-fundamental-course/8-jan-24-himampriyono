@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Katik</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<div class="judul">
@@ -57,37 +58,55 @@
 			<div class="judul_kalkulator"><h3>KALKULATOR PERSEGI</h3></div>
 			<div class="form_input">
 				<p><b>Silahkan masukan besar sisi dari persegi yang akan dihitung!</b></p>
-				<div>
-					<input type="text" id="input_sisi" class="input_sisi">
-					<button id="btn_input" class="btn_input">Hitung</button>
+				<div class="input_container">
+					<!-- <div> -->
+						<input type="text" id="input_sisi" class="input_sisi" placeholder="masukan angka">
+						<button id="btn_input" class="btn_input" onclick="validasiAngka()"><b>Hitung</b></button>
+					<!-- </div> -->
+					<div>
+						<button id="btn_reset" onclick="reset_persegi()"><b>Reset</b></button>
+					</div>
 				</div>
 			</div>
-			<div class="penyelesaian_persegi">
+			<div class="penyelesaian_persegi" id="penyelesaian_persegi">
 				<div class="persegi_container">
 					<div class="persegi">
 						<div class="sudut_persegi"><b>A</b></div>
-						<div class="sisi_persegi">s</div>
+						<div class="sisi_persegi" id="sisi_persegi_1">s</div>
 						<div class="sudut_persegi"><b>B</b></div>
-						<div class="sisi_persegi">s</div>
+						<div class="sisi_persegi" id="sisi_persegi_2">s</div>
 						<div class="persegi_isi"></div>
-						<div class="sisi_persegi">s</div>
+						<div class="sisi_persegi" id="sisi_persegi_3">s</div>
 						<div class="sudut_persegi"><b>C</b></div>
-						<div class="sisi_persegi">s</div>
+						<div class="sisi_persegi" id="sisi_persegi_4">s</div>
 						<div class="sudut_persegi"><b>D</b></div>
 					</div>
 				</div>
 				<div class="rumus_luas">
 					<div class="judul_rumus">
 						<h3>Luas Persegi</h3>
+						<p>L = s x s</p>
+						<p>Maka :</p>
+						<p id="luas_persegi"></p>
+						<p id="hasil_luas_persegi"></p>
 					</div>
 				</div>
 				<div class="rumus_keliling">
 					<div class="judul_rumus">
 						<h3>Keliling Persegi</h3>
+						<p>K = 4 x s</p>
+						<p>Maka :</p>
+						<p id="keliling_persegi"></p>
+						<p id="hasil_keliling_persegi"></p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="footer">
+		<p>Himam Priyono</p>
+		<p><b>Mini Project RevoU</b></p>
+		<p>@2024</p>
 	</div>
 </body>
 </html>

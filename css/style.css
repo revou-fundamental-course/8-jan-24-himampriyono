@@ -1,5 +1,6 @@
 body{
 	background-color: #ddf;
+	font-family: roboto;
 }
 
 .judul{
@@ -8,6 +9,8 @@ body{
 	align-items: center;
 	color: white;
 	padding: 8px;
+	border-radius: 4px;
+	margin: 0 8px;
 }
 
 .judul h1{
@@ -34,6 +37,7 @@ body{
 	background: linear-gradient(to bottom, lightskyblue, white);
 	padding: 24px;
 	color: midnightblue;
+	border-radius: 6px 6px 0 0;
 }
 
 .kalkulator_bangun_datar{
@@ -132,7 +136,7 @@ body{
 	padding: 4px;
 	text-align: center;
 	width: 80%;
-	margin: 12px auto;
+	margin: 48px auto 12px auto;
 }
 
 .judul_kalkulator h3{
@@ -141,7 +145,7 @@ body{
 
 .penyelesaian_persegi{
 	margin-top: 12px;
-	display: flex;
+	display: none;
 	justify-content: space-around;
 }
 
@@ -167,16 +171,47 @@ body{
 	flex-direction: column;
 }
 
+.input_container{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 .input_sisi{
 	outline-color: skyblue;
-	border-color: skyblue;
-	width: 200px;
-	height: 20px;
+	border: 2px solid skyblue;
+	width: 150px;
+	height: 30px;
 	padding: 2px 8px;
 	border-radius: 8px;
+	text-align: center;
 }
 
 .btn_input{
+	margin-left: 12px;
 	height: 30px;
-	border-radius: 12px;
+	border-radius: 4px;
+	border: none;
+	outline: 1px solid deepskyblue;
+	background-color: royalblue;
+	color: white;
+}
+
+#btn_reset{
+	margin-left: 12px;
+	height: 30px;
+	border-radius: 4px;
+	border: none;
+	outline: 1px solid orange;
+	background-color: orangered;
+	color: white;
+}
+
+.footer{
+	margin-top: 24px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding: 4px 24px;
 }
