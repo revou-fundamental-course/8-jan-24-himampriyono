@@ -1,0 +1,182 @@
+body{
+	background-color: #ddf;
+}
+
+.judul{
+	background: linear-gradient(to right, deepskyblue, lightcyan);
+	display: flex;
+	align-items: center;
+	color: white;
+	padding: 8px;
+}
+
+.judul h1{
+	font-size: 48px;
+	margin: 4px;
+	outline: 1px solid white;
+	padding: 4px 12px;
+}
+
+.judul h2{
+	font-size: 32px;
+	margin-left: 32px;
+}
+
+.container{
+	background-color: white;
+	margin: 0px 8px;
+	padding: 12px;
+	border-radius: 0px 0px 12px 12px;
+}
+
+.teks_selamat_datang{
+	text-align: center;
+	background: linear-gradient(to bottom, lightskyblue, white);
+	padding: 24px;
+	color: midnightblue;
+}
+
+.kalkulator_bangun_datar{
+	margin-top: 32px;
+}
+
+.judul_bangun_datar{
+	background-color: blueviolet;
+	color: white;
+	padding: 4px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+.judul_bangun_datar h3{
+	margin: 0;
+}
+
+.info_bangun_datar{
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.persegi_container{
+	width: 30%;
+	justify-content: center;
+	align-items: center;
+	outline: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.persegi {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.persegi_isi{
+	background-color: lightskyblue;
+	width: 200px;
+	height: 200px;
+	outline: 2px solid black;
+}
+
+.sudut{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+}
+
+.sisi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: orangered;
+}
+
+.rumus_luas{
+	outline: 1px solid #ddd;
+	width: 30%;
+	justify-content: center;
+}
+
+.rumus_keliling{
+	outline: 1px solid #ddd;
+	width: 30%;
+	justify-content: center;
+}
+
+.judul_rumus{
+	padding: 12px;
+}
+
+.judul_rumus h3{
+	text-align: center;
+}
+
+.rumus{
+	outline: 1px solid blue;
+	padding: 4px 8px;
+	max-width: 30%;
+	text-align: center;
+	margin: 32px auto;
+}
+
+.judul_kalkulator{
+	background-color: black;
+	color: white;
+	padding: 4px;
+	text-align: center;
+	width: 80%;
+	margin: 12px auto;
+}
+
+.judul_kalkulator h3{
+	margin: 0;
+}
+
+.penyelesaian_persegi{
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.sudut_persegi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: blue;
+}
+
+.sisi_persegi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.form_input{
+	margin: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.input_sisi{
+	outline-color: skyblue;
+	border-color: skyblue;
+	width: 200px;
+	height: 20px;
+	padding: 2px 8px;
+	border-radius: 8px;
+}
+
+.btn_input{
+	height: 30px;
+	border-radius: 12px;
+}
